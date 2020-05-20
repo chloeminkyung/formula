@@ -199,7 +199,13 @@
         directionNav: dataOptions.directionNav === true ? true : false,
         prevText: '<i class="ti-arrow-left"></i>',
         nextText: '<i class="ti-arrow-right"></i>',
+        autoplay: true,
       };
+
+      if (options.autoplay) {
+        options.autoplayTimeout = dataOptions.autoplayTimeout || 2000;
+        options.autoplayHoverPause = true;
+      }
 
       $(el).flexslider(options);
     });
@@ -735,6 +741,10 @@
 
     if ($('.countdown').length) {
       initCountdowns();
+    }
+
+    if ($('.small-link')['aria-expanded']) {
+      console.log("aldijalijf");
     }
   }
 

@@ -121,6 +121,9 @@ a.small-link {
   letter-spacing: 2px;
   font-weight: 500;
 }
+a.small-link:hover {
+  color: #276FBF;
+}
 a.white-text:hover {
   color: #20508C;
 }
@@ -394,7 +397,7 @@ section.colored {
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
   font-weight: 400;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Ruda', sans-serif;
 }
 .btn > span i {
   margin-left: 0;
@@ -1629,6 +1632,7 @@ section.dark .icon-box-small.boxed {
   position: absolute;
   top: 0;
   font-size: 12px;
+  font-weight: bold;
 }
 .img-side {
   padding: 0px;
@@ -2049,7 +2053,7 @@ section.dark .icon-box-small.boxed {
 .team-member {
   position: relative;
   padding-bottom: 80px;
-  border: 1px solid #e7e7e7;
+  /*border: 1px solid #e7e7e7;*/
   border-top: 0;
   max-width: 350px;
   margin: 50px auto;
@@ -2584,7 +2588,7 @@ section.parallax .countdown span {
   transition: all .3s ease;
   border: 1px solid transparent;
   font-weight: 400;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Ruda', sans-serif;
   color: #868e95;
 }
 #filters li:hover {
@@ -3339,6 +3343,10 @@ section.parallax .countdown span {
   height: 20px;
   font-size: 15px;
 }
+.tab-title {
+  font-weight: bold;
+  font-size: 13px !important;
+}
 .nav-tabs {
   border-bottom: 0;
   margin-bottom: 25px;
@@ -3356,7 +3364,7 @@ section.parallax .countdown span {
   font-size: 11px;
   border-radius: 0;
   color: #191b1d;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Ruda', sans-serif;
 }
 .nav-tabs > li > a:hover {
   background-color: transparent;
@@ -3402,7 +3410,7 @@ section.dark .nav-tabs.outline > li.active > a:hover {
 .table > thead > tr > th {
   border-bottom: 1px solid #e7e7e7;
   font-size: 11px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Ruda', sans-serif;
   letter-spacing: 1px;
   font-weight: 400;
 }
@@ -3653,9 +3661,20 @@ section.dark .nav-tabs.outline > li.active > a:hover {
 }
 .photo-gallery > li .gallery-item {
   position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 350px;
 }
 .photo-gallery > li .gallery-item > a {
   display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 350px;
+}
+.photo-gallery > li .gallery-item > a > img {
+  object-fit: cover;
+  width: 100%;
+  height: 350px;
 }
 .photo-gallery > li .gallery-item > a:hover:before,
 .photo-gallery > li .gallery-item > a:hover:after {
@@ -4117,7 +4136,7 @@ footer.dark p {
   font-size: 21px;
 }
 .red-dot:before {
-  content: ".";
+  content: "_";
   color: #20508C;
 }
 .alt-paragraph {
