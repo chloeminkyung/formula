@@ -1050,8 +1050,8 @@ section.dark .icon-box-small.boxed {
 }
 .icon-box-small.outlined {
   border: 1px solid #e7e7e7;
-  height: 450px;
-  overflow: auto;
+  /*height: 450px;*/
+  /*overflow: auto;*/
 }
 .icon-box-small.left-align {
   text-align: left;
