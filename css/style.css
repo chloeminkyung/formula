@@ -1095,6 +1095,12 @@ section.dark .icon-box-small.boxed {
   text-transform: uppercase;
   letter-spacing: .2em;
 }
+.icon-box-small h4 {
+  font-size: 15px;
+  margin: 25px 0;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
 .icon-box-small h4.cursive {
   text-transform: none;
   font-size: 32px;
