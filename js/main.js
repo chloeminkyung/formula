@@ -211,6 +211,24 @@
     });
   }
 
+  function initCarSlider() {
+    $('.car-slides').each(function(index, el) {
+      var prev = slider.currentSlide - 1, // in case slider does not strat at 0
+        next = slider.currentSlide + 1;
+
+      if (prev < 0) {
+          prev = slider.slides.length - 1;
+      }
+
+      if (next == slider.slides.length) {
+          next = 0;
+      }
+
+      $('#ethosPrev a').text($(slider.slides[prev]).text());
+      $('#ethosNext a').text($(slider.slides[next]).text());
+    });
+  }
+
   function initMap() {
 
     var lat = $('#map').data('lat');
@@ -520,22 +538,16 @@
           url: $(this).attr('action'),
           type: 'POST',
           data: $(this).serialize(),
+          crossDomain: true,
+          xhrFields: {
+            withCredentials: true
+          }
         })
-        .done(function() {
-          var message = $('#contact-form').data('success-text') || 'Your message has been sent. We will get back to you shortly!';
-          var succesTemplate = '<div role="alert" class="alert alert-success alert-outline">'+ message +'</div>';
-          $('#contact-form input, #contact-form textarea, #contact-form button').attr('disabled', 'disabled');
-          $('#contact-form .alert').fadeOut(300);
-          $(succesTemplate).insertBefore($('#contact-form button'));
-        })
-        .fail(function() {
-          var message = $('#contact-form').data('error-text') || 'There was an error. Try again later.';
-          var errorTemplate = '<div role="alert" class="alert alert-danger alert-outline">'+ message +'</div>';
-          $('#contact-form .alert').fadeOut(300);
-          $(errorTemplate).insertBefore($('#contact-form button'));
-        })        
+        var message = $('#contact-form').data('success-text') || 'Your message has been sent. We will get back to you shortly!';
+        var succesTemplate = '<div role="alert" class="alert alert-success alert-outline">'+ message +'</div>';
+        $('#contact-form .alert').fadeOut(300);
+        $(succesTemplate).insertBefore($('#contact-form button'));
       }
-
     });
 
     $('#contact-form input, #contact-form textarea').on('keyup', function(event) {
@@ -742,11 +754,15 @@
     if ($('.countdown').length) {
       initCountdowns();
     }
-
-    if ($('.small-link')['aria-expanded']) {
-      console.log("aldijalijf");
-    }
   }
+
+  $('.small-link').click(function() {
+    if($(this).attr('aria-expanded') == "true") {
+      this.innerText = "READ MORE";
+    } else {
+      this.innerText = "READ LESS";
+    }
+  });
 
   init();
 

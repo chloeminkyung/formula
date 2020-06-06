@@ -1,8 +1,3 @@
-/*
-  Style.css file
-  Comet Template
-  By CodePark | http://codepark.co
-*/
 /****************
 
   Table of Contents
@@ -109,20 +104,21 @@ a {
   color: #20508C;
 }
 a:hover {
-  color: #7a0921;
+  color: #183059;
   text-decoration: none;
 }
 a:focus {
-  color: #1b0207;
+  color: #183059;
   text-decoration: none;
 }
 a.small-link {
   font-size: 11px;
   letter-spacing: 2px;
   font-weight: 500;
+  color: #276FBF;
 }
 a.small-link:hover {
-  color: #276FBF;
+  color: #8FB2D9;
 }
 a.white-text:hover {
   color: #20508C;
@@ -831,9 +827,9 @@ blockquote footer {
 #topnav .navigation-menu > li > a {
   display: block;
   color: #fff;
-  font-size: 10px;
+  font-size: 13px;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   font-weight: 500;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
@@ -877,7 +873,7 @@ blockquote footer {
   transition: all .3s ease;
 }
 #topnav .logo img {
-  max-height: 40px;
+  max-height: 45px;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
@@ -1054,6 +1050,8 @@ section.dark .icon-box-small.boxed {
 }
 .icon-box-small.outlined {
   border: 1px solid #e7e7e7;
+  height: 450px;
+  overflow: auto;
 }
 .icon-box-small.left-align {
   text-align: left;
@@ -1091,8 +1089,8 @@ section.dark .icon-box-small.boxed {
 .icon-box-small > i {
   font-size: 46px;
 }
-.icon-box-small h4 {
-  font-size: 13px;
+.icon-box-small h5 {
+  font-size: 15px;
   margin: 25px 0;
   text-transform: uppercase;
   letter-spacing: .2em;
@@ -1327,6 +1325,34 @@ section.dark .icon-box-small.boxed {
   -moz-transition: -moz-transform 6s ease 0s;
   -moz-transform-origin: center center;
 }
+.site_title {
+  /*font-family: Arial, sans-serif;*/
+}
+#features {
+  padding-top: 80px;
+}
+.car-nav-container {
+  display: inline-flex;
+}
+.car-nav-subcontainer {
+  display: inline-flex;
+ }
+.car-nav-subcontainer h3 {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.car-nav {
+  font-size: 25px;
+  margin-top: auto;
+  margin-bottom: auto;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  color: #8FB2D9;
+}
+.car-nav:hover {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+  color: #20508c;
+}
 #home-slider .flex-direction-nav > li {
   position: absolute;
   top: 50%;
@@ -1335,9 +1361,13 @@ section.dark .icon-box-small.boxed {
 }
 #home-slider .flex-direction-nav > li.flex-nav-prev {
   left: 0;
+  padding-left: 50px;
+  font-size: 30px;
 }
 #home-slider .flex-direction-nav > li.flex-nav-next {
   right: 0;
+  padding-right: 50px;
+  font-size: 30px;
 }
 #home-slider .flex-direction-nav > li > a {
   display: block;
@@ -2196,8 +2226,12 @@ section.dark .icon-box-small.boxed {
 .contact-form .form-group {
   margin-bottom: 20px;
 }
+.contact-form .form-group input {
+  text-transform: none;
+}
 .contact-form textarea {
   min-height: 200px;
+  text-transform: none;
 }
 /*
   07
@@ -4150,6 +4184,24 @@ footer.dark p {
 .fade-in-top {
   -webkit-animation: fadeInTop 1.5s both;
   animation: fadeInTop 1.5s both;
+}
+.car-slider-nav i {
+  font-size: 35px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.car-slider-nav {
+  display: flex;
+  font-size: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  color: #79818a;
+}
+.car-slider-nav:hover {
+  color: #20508c;
+
 }
 /*
   24
