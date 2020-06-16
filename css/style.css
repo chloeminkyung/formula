@@ -100,6 +100,23 @@ h6.upper,
   font-size: 12px;
   font-weight: 400;
 }
+.emph {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  color: #6d747c;
+}
+.emph:hover {
+  color: #8FB2D9;
+}
+.emph2 {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  color: #276FBF;
+}
+.emph2:hover {
+  background-color: #20508C;
+  color: white;
+}
 a {
   color: #20508C;
 }
