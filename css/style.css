@@ -1067,8 +1067,14 @@ section.dark .icon-box-small.boxed {
 }
 .icon-box-small.outlined {
   border: 1px solid #e7e7e7;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
   /*height: 450px;*/
   /*overflow: auto;*/
+}
+.icon-box-small.outlined:hover {
+  color: #20508C;
+  border: 1px solid #20508C;
 }
 .icon-box-small.left-align {
   text-align: left;
