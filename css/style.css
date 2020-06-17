@@ -2135,6 +2135,7 @@ section.dark .icon-box-small.boxed {
 .team-image {
   position: relative;
   overflow: hidden;
+  border-radius: 8px;
 }
 .team-image:after {
   content: "";
