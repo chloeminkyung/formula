@@ -1220,8 +1220,9 @@ section.dark .icon-box-small.boxed {
   padding-right: 15px;
 }
 .text-box h4 {
-  font-size: 13px;
+  font-size: 14px;
   text-transform: uppercase;
+  font-style: italic;
 }
 .text-box hr {
   width: 40px;
