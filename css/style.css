@@ -148,6 +148,31 @@ p {
 p .db {
   display: block;
 }
+.aerodynamics {
+  content: url('../images/custom_icons/aero-icon.png');
+  height: 40px;
+  width: 80px;
+}
+.driver {
+  content: url('../images/custom_icons/driver-icon.png');
+  height: 60px;
+  width: 55px;
+}
+.suspension {
+  content: url('../images/custom_icons/suspension-icon.png');
+  height: 75px;
+  width: 22px;
+}
+.powertrain {
+  content: url('../images/custom_icons/powertrain-icon.png');
+  height: 50px;
+  width: 100px;
+}
+.ee {
+  content: url('../images/custom_icons/ee-icon.png');
+  height: 65px;
+  width: 65px;
+}
 .icon-list li {
   margin-bottom: 10px;
   list-style-type: none;
@@ -1084,6 +1109,9 @@ section.dark .icon-box-small.boxed {
 .icon-box-small.outlined:hover {
   color: #20508C;
   border: 1px solid #20508C;
+}
+.icon-box-small.outlined:hover i {
+  color: black;
 }
 .icon-box-small.left-align {
   text-align: left;
@@ -2267,6 +2295,13 @@ section.dark .icon-box-small.boxed {
   margin-bottom: 20px;
 }
 .contact-form .form-group input {
+  text-transform: none;
+}
+.application-form .form-group input {
+  text-transform: none;
+}
+.application-form textarea {
+  min-height: 200px;
   text-transform: none;
 }
 .contact-form textarea {
