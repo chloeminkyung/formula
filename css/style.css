@@ -1216,6 +1216,11 @@ section.dark .icon-box-small.boxed {
   min-height: 40px;
   overflow: hidden;
 }
+.icon-box-basic:hover h3 {
+  color: #20508c;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
 @media (min-width: 992px) {
   .icon-box-basic.icon-right {
     padding-left: 0;
